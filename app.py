@@ -71,5 +71,5 @@ def predict(model_key):
         'prediction_percentages': prediction_percentages
     })
 if __name__ == '__main__':
-    #load_keras_models() 
+    load_keras_models() 
     app.run()
