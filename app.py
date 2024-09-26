@@ -46,6 +46,15 @@ def process_and_predict_image(file, model_key):
 
     return predicted_class[0], prediction_percentages
 
+@app.route('/')
+def home():
+    return "Hello, World!"
+
+@app.route('/health')
+def health():
+    return 'OK', 200
+
+
 @app.route('/model_summary/<model_key>')
 def model_summary(model_key):
     summary_output = []
